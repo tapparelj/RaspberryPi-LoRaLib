@@ -32,7 +32,7 @@ The configuration of the following parameters is supported:
 
     ```dtc -@ -I dts -O dtb -o spi-cs-extend.dtbo spi-cs-extend.dts```
 - Then place `spi-cs-extend.dtbo` into `/boot/overlays`
-- Add the following line to your `/boot/config.txt`: 
+- Add the following line to your `/boot/firmware/config.txt`: 
   
   ```dtoverlay=spi-cs-extend```
 - Reboot
