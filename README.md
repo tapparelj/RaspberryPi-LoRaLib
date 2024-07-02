@@ -20,7 +20,7 @@ The configuration of the following parameters is supported:
 - Enable SPI on your raspberry Pi using ```sudo raspi-config``` and enabling SPI under _Interface Options_
 - Modify the PINs connected to the _reset_, _DIO 0_ of your chip in the beginning of loralibPi5.py if needed
 - Modify the SPI _BUS_ and _DEVICE_ you are using  with your Raspiberry Pi
-    - You can see wich device and bus are enables on your pi using ```ls \dev\spidev*```. The results are _\dev\spidev{BUS}.{DEVICE}_
+    - You can see wich device and bus are enables on your pi using ```ls /dev/spidev*```. The results are _\dev\spidev{BUS}.{DEVICE}_
     - The default SPI BUS 0 uses GPIO 9, 10 and 11
     - Set the device based on the chip enable pin you want to use (0 for CE0 on GPIO 7, 1 for CE1 on GPIO 8) in the beginning of lo ralibPi5.
     - If you want to use a custom pin for chip enable, see the section below
